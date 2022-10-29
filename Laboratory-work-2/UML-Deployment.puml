@@ -1,0 +1,27 @@
+@startuml
+
+title SyncReader deployment diagram
+
+left to right direction
+
+skinparam componentStyle uml1
+
+node "<<Handset>>" as hs {
+    node "<<Operating System Android>>" {
+        component [SyncReader.apk]
+    }
+}
+
+
+interface "Screen Input"
+
+"Screen Input" -- hs
+
+node "<<Google service host>>" as serv1 {
+		    component [Google Translate]
+}
+
+hs -(0- serv1
+
+
+@enduml
