@@ -7,7 +7,8 @@
 ![image](https://user-images.githubusercontent.com/41470575/204102404-2b984ea6-d3e2-42d0-a2a9-9dbae9c71f72.png)
 
 ## Крок 3
-####
+#### Зареєструйте нового користувача в СКБД PostgreSQL, назва якого співпадає з вашим ім'ям, наприклад ivan, і довільним паролем.
+![image](https://user-images.githubusercontent.com/41470575/204102681-dd3fa67c-90f5-433a-9693-ca3071e0babf.png)
 
 ## Крок 4
 ####
