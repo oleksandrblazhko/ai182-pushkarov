@@ -69,7 +69,9 @@
 ## Крок 13
 #### Створіть команду оновлення даних таблиці (UPDATE) і виконайте її від імені нового користувача. Проаналізуйте результат виконання команди. 
 ![image](https://user-images.githubusercontent.com/41470575/204116758-35eb9d2c-b5aa-4bf4-b90d-8a52c056fe3c.png)
-> UPDATE university SET u_id = 2;
+> UPDATE university SET u_id = 2;</br>
+
+Не может апдейтить без прав
 
 ## Крок 14
 #### Встановіть повноваження на оновлення таблиці новому користувачеві. 
@@ -79,26 +81,47 @@
 ## Крок 15
 #### Повторіть крок 13. 
 ![image](https://user-images.githubusercontent.com/41470575/204116788-7ab02e4d-876c-4318-9b7f-1800fa1b9e0e.png)
-> SELECT * FROM university;
+> UPDATE university SET u_id = 2;</br>
+
+![image](https://user-images.githubusercontent.com/41470575/204116997-f410cc46-ac7a-4fa6-8057-dcecb9d1c1a0.png)
 
 ## Крок 16
 #### Створіть команду видалення запису таблиці (DELETE) і виконайте її від імені нового користувача. Проаналізуйте результат виконання команди. 
+![image](https://user-images.githubusercontent.com/41470575/204117225-643b39d8-e84f-4da7-840c-7c4a4813ca8f.png)
+> DELETE FROM university WHERE u_id = 2;
 
 ## Крок 17
 #### Встановіть повноваження на видалення таблиці новому користувачеві. 
+![image](https://user-images.githubusercontent.com/41470575/204117347-86422b13-14e7-416a-865f-dbbef986c897.png)
+> GRANT DELETE ON university TO oleksii;</br>
+
+actually granted 'ALL'
 
 ## Крок 18
 #### Повторіть крок 16. 
+![image](https://user-images.githubusercontent.com/41470575/204117618-43b3bf52-bdfc-4f53-960e-5631b8205448.png)
+> DELETE FROM university WHERE u_id = 2;</br>
+
+![image](https://user-images.githubusercontent.com/41470575/204117629-4edb4d26-a5cd-4527-863e-9bb191d948bc.png)
 
 ## Крок 19
 #### Зніміть всі повноваження  з таблиці для нового користувача.
+![image](https://user-images.githubusercontent.com/41470575/204117663-0de4a6e8-4e06-4ba5-9281-6b81db56011f.png)
+> REVOKE ALL ON university FROM oleksii;
 
 ## Крок 20
 #### Створіть команду внесення запису в таблицю (INSERT) і виконайте її від імені нового користувача. Проаналізуйте результат виконання команди. 
+![image](https://user-images.githubusercontent.com/41470575/204117677-67e6991a-ad21-49e9-8f9a-d8b922e8b10a.png)
+> Insert into university values  (1, 'ONPU', 1918);
 
 ## Крок 21
 #### Встановіть повноваження на внесення даних до таблиці для ролі. 
+![image](https://user-images.githubusercontent.com/41470575/204117697-6d185238-7195-4917-92f8-d41fdc757c3a.png)
+> GRANT INSERT ON university TO oleksii;
 
 ## Крок 22
 #### Повторіть крок 20. 
+![image](https://user-images.githubusercontent.com/41470575/204117706-393263b8-64f7-41b5-b057-e0db1580c3c3.png)
+> Insert into university values  (1, 'ONPU', 1918); </br>
 
+![image](https://user-images.githubusercontent.com/41470575/204117719-b9445879-8dbe-482e-b729-7f4265538465.png)
