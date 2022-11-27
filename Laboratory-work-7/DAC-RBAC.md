@@ -38,30 +38,48 @@
 
 ## Крок 7
 #### Додатково створіть ще одну термінальну консоль psql та та встановіть з’єднання з БД postgres від імені нового користувача. 
+![image](https://user-images.githubusercontent.com/41470575/204115826-b8063706-15e1-4d8d-8cf9-58c74a2c91c5.png)
+> psql -U oleksii -d postgres
 
 ## Крок 8
 #### Від імені вашого користувача виконайте запит на отримання даних з таблиці (select * from таблиця). Запротоколюйте результат виконання команди. 
+![image](https://user-images.githubusercontent.com/41470575/204115856-181807c1-1350-4bf6-95fe-dfb995d90cd3.png)
+> SELECT * FROM university;
 
 ## Крок 9
 #### Встановіть повноваження на читання таблиці новому користувачеві. 
+![image](https://user-images.githubusercontent.com/41470575/204115994-674dd0c7-bdcf-4336-b6df-0147a1381292.png)
+> GRANT SELECT ON university TO oleksii;
 
 ## Крок 10
 #### Повторіть крок 8. 
+![image](https://user-images.githubusercontent.com/41470575/204116007-2f87c03c-adf7-4906-95df-e562501622f0.png)
+> SELECT * FROM university;
 
 ## Крок 11
 #### Зніміть повноваження на читання таблиці для нового користувача. 
+![image](https://user-images.githubusercontent.com/41470575/204116047-f70b5cf7-4a33-4e49-a302-17eb90760140.png)
+> REVOKE SELECT ON university FROM oleksii;
 
 ## Крок 12
 #### Повторіть крок 8.
+![image](https://user-images.githubusercontent.com/41470575/204116054-0de98c78-fd67-4368-836a-a3b8c0bf0b13.png)
+> SELECT * FROM university;
 
 ## Крок 13
 #### Створіть команду оновлення даних таблиці (UPDATE) і виконайте її від імені нового користувача. Проаналізуйте результат виконання команди. 
+![image](https://user-images.githubusercontent.com/41470575/204116758-35eb9d2c-b5aa-4bf4-b90d-8a52c056fe3c.png)
+> UPDATE university SET u_id = 2;
 
 ## Крок 14
 #### Встановіть повноваження на оновлення таблиці новому користувачеві. 
+![image](https://user-images.githubusercontent.com/41470575/204116782-2353244a-6366-4dc9-ac65-b12e3c28aaf3.png)
+> GRANT UPDATE ON university TO oleksii;
 
 ## Крок 15
 #### Повторіть крок 13. 
+![image](https://user-images.githubusercontent.com/41470575/204116788-7ab02e4d-876c-4318-9b7f-1800fa1b9e0e.png)
+> SELECT * FROM university;
 
 ## Крок 16
 #### Створіть команду видалення запису таблиці (DELETE) і виконайте її від імені нового користувача. Проаналізуйте результат виконання команди. 
