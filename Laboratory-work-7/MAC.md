@@ -58,3 +58,32 @@ WHERE</br>
     l.role_name = CURRENT_USER and</br>
 	l.access_level >= s.spot_conf;</br>
 
+
+## Крок 6
+#### Створіть INSERT/UPDATE/DELETE-правила повноважного керування доступом для користувача. 
+![image](https://user-images.githubusercontent.com/41470575/204121307-6124233e-1a70-43e8-bb2e-a3ea4fa1d6b4.png)
+
+
+![image](https://user-images.githubusercontent.com/41470575/204121233-2120e622-1f5d-4fff-960e-771808045bec.png)
+
+
+![image](https://user-images.githubusercontent.com/41470575/204120586-55fad4a0-e749-4bf9-adb7-c0c67b135b83.png)
+> GRANT SELECT </br>
+ON oleksii.university </br> 
+TO oleksii;</br>
+
+## Крок 7
+####
+
+![image](https://user-images.githubusercontent.com/41470575/204121278-ebe8f467-2e9d-4d9c-863e-20496b8f4cee.png)
+
+![image](https://user-images.githubusercontent.com/41470575/204121401-6ee98286-3f38-43bd-9196-cd7dd0c6a079.png)
+
+update level to oleksii user from 2 to 3
+![image](https://user-images.githubusercontent.com/41470575/204121435-b767f0b2-13c4-4161-9c3a-9a73c9be4ace.png)
+
+![image](https://user-images.githubusercontent.com/41470575/204121406-e303c376-96b0-44e7-854e-219981fff039.png)
+
+![image](https://user-images.githubusercontent.com/41470575/204121418-fa803c97-0165-47b5-b2ab-50bd8d31d98c.png)
+
+
