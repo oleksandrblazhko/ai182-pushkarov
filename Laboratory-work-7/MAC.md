@@ -86,7 +86,7 @@ update level to oleksii user from 2 to 3
 
 ![image](https://user-images.githubusercontent.com/41470575/204121418-fa803c97-0165-47b5-b2ab-50bd8d31d98c.png)
 
-insert delete update
+insert delete update select(Table)
 
 ![image](https://user-images.githubusercontent.com/41470575/209437459-4fd16c3a-9ee8-4b70-906f-a88c8eed261c.png)
 
